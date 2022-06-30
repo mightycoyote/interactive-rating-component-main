@@ -49,23 +49,7 @@
           <input type="radio" id="rate5" name="rating" value="5">
           <label for="rate5">5</label>
         </div>
-        <!-- <div class="radios" role="radiogroup">
-          <input type="radio" id="rate1" name="rating" value="1">
-          <label for="rate1" role="radio" tabindex="0">1</label>
-
-          <input type="radio" id="rate2" name="rating" value="2">
-          <label for="rate2" role="radio" tabindex="0">2</label>
-
-          <input type="radio" id="rate3" name="rating" value="3">
-          <label for="rate3" role="radio" tabindex="0">3</label>
-
-          <input type="radio" id="rate4" name="rating" value="4">
-          <label for="rate4" role="radio" tabindex="0">4</label>
-
-          <input type="radio" id="rate5" name="rating" value="5">
-          <label for="rate5" role="radio" tabindex="0">5</label>
-        </div> -->
-        <button type="submit">Submit</button>
+        <button type="button">Submit</button>
       </fieldset>
     </form>
     <!-- Rating state end -->
@@ -92,6 +76,31 @@
       Coded by <a href="https://mightycoyote.github.io/">Sarah Wilkes</a>.
     </div>
   </footer>
+
+  <script>
+
+    const submitButton = document.querySelector('fieldset button');
+    const container = document.querySelector('main');
+    const radioGroup = document.forms[0].elements['rating'];
+
+    function returnConf() {
+
+      container.innerHTML = `
+        <div class="thankyoustate">
+          <img src="./images/illustration-thank-you.svg" alt="">
+          <span>You selected ${radioGroup.value} out of 5</span>
+          <div>
+            <h1>Thank you!</h1>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+          </div>
+        </div>
+      `;
+    }
+
+    submitButton.addEventListener('click', returnConf);
+
+  </script>
 </body>
 
 </html>
