@@ -14,8 +14,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -33,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Interactive rating component](https://mightycoyote.github.io/interactive-rating-component-main/)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- This solution on Frontend Mentor: [Add solution URL here](https://your-live-site-url.com)
+- Live site: [Interactive rating component](https://mightycoyote.github.io/interactive-rating-component-main/)
 
 ## My process
 
@@ -48,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-Selecting a single option between 1 and 5 is functionally a set of radio buttons, even though this design doesn't use the default dot-and-circle button like this: &#9737;. The radio button label already works as part of the button by default, so I suspected it would be possible to hide the &#9737; and style the labels. I did some research to see if this was a good solution and the best way to go about it if so.
+Selecting a single option between 1 and 5 is functionally a set of radio buttons, even though this design doesn't use the default dot-and-circle button. The radio button label already works as part of the button by default, so I suspected it would be possible to hide the &#9737; and style the labels. I did some research to see if this was a good solution and the best way to go about it if so.
 
 Styling the labels based on _pseudo-classes_ of the buttons requires some somewhat fancy selectors:
 
@@ -66,7 +64,7 @@ Styling the labels based on _pseudo-classes_ of the buttons requires some somewh
 
 ...so I'm glad I looked this up instead of trying to reinvent the wheel.
 
-Otherwise this was a good solution since I did not have to write JS to make circles behave like radio buttons. The DOM knows where the radio button group is and which one has been selected.
+Otherwise I feel this was a good solution since I did not have to write Javascript to make numbered circles behave like radio buttons. The DOM knows where the radio button group is _and_ which one has been selected.
 
 ```
 const radioGroup = document.forms[0].elements['rating'];
@@ -78,7 +76,7 @@ const radioGroup = document.forms[0].elements['rating'];
 
 ### Useful resources
 
-- [Customize Radio Button Appearance with CSS](hhttps://markheath.net/post/customize-radio-button-css)
+- [Customize Radio Button Appearance with CSS](https://markheath.net/post/customize-radio-button-css)
 - [RadioNodeList.value on MDN](https://developer.mozilla.org/en-US/docs/Web/API/RadioNodeList/value)
 
 ## Author
