@@ -27,11 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-[Screenshot](./images/screenshot.png)
+- [Screenshot](./images/screenshot.png)
 
 ### Links
 
-- This solution on Frontend Mentor: [Add solution URL here](https://your-live-site-url.com)
+- This solution on Frontend Mentor: [Interactive rating component with HTML radio buttons](https://www.frontendmentor.io/solutions/interactive-rating-component-with-html-radio-buttons-7M2t1ellp7)
 - Live site: [Interactive rating component](https://mightycoyote.github.io/interactive-rating-component-main/)
 
 ## My process
@@ -43,6 +43,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Both inline and referenced SVGs
+- Vanilla Javascript
 
 ### What I learned
 
