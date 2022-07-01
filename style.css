@@ -134,10 +134,9 @@ button:focus, button:hover {
   text-align: center;
   justify-items: center;
   gap: 20px;
-  /* padding: 15px; */
 }
 
-span {
+.thankyoustate span {
   color: hsl(25, 97%, 70%);
   background-color: var(--dark-blue);
   border-radius: 20px;
